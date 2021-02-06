@@ -1,0 +1,108 @@
+<div class="container" style="margin-top: 100px;">
+  <div class="row">
+
+    <div class="col-md-9">
+      <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
+    </div>
+
+      <div class="col-md-3" style="background-color: darkgray;">
+        <div class="form-group" style="font-weight: bold;font-size: 20px;">
+          <p>{{SingleCar.brand}} {{SingleCar.model}}</p>
+        </div>
+
+        <div class="form-group" style="background-color:burlywood;font-weight: bold;font-size: 25;padding: 5px;">
+          <p >
+            Year : {{SingleCar.year}} &nbsp;&nbsp;&nbsp; MileAge : {{SingleCar.mileAge}} km
+          </p>
+        </div>
+
+        <div class="form-group" style="background-color: orange;font-weight: bold;font-size: 18px;color:darkred;padding: 5px;">
+          <p>Price : {{SingleCar.price}} PLN</p>
+        </div>
+
+        <div class="form-group" style="background-color: burlywood;font-size: 20px;font-weight: bold;padding: 5px;">
+          <p style="color:green">Contact with seller </p>
+          <p> {{SingleCar.fullName | uppercase}} </p>
+          <p> Phone : {{SingleCar.mobile}}  </p>
+          <p> Address :  {{SingleCar.address}}</p>
+        </div>
+
+      </div>
+  <hr>
+  </div>
+</div>
+
+
+<div class="container">
+  <h3>Details</h3>
+  <div class="row" style="font-weight: bold;">
+    <div class="col-md-4">
+      <p>Brand : {{SingleCar.brand}} </p>
+      <p>Model : {{SingleCar.model}}</p>
+      <p>MileAge : {{SingleCar.mileAge}} km</p>
+      <p>GearBox : {{SingleCar.gearBox}}</p>
+    </div>
+    <div class="col-md-4">
+      <p>State : {{SingleCar.state}} </p>
+      <p>Color : {{SingleCar.color}}</p>
+      <p>Doors : {{SingleCar.doors}}</p>
+    </div>
+
+    <div class="col-md-4">
+      <p style="font-weight: bold;font-size: 20px;"> {{SingleCar.brand}} {{SingleCar.model}}</p>
+      <img [src]="path+SingleCar.logo" alt="OOPS" height="80px" width="120px">
+    </div>
+
+  </div>
+  </div>
+
+  <hr>
+
+  <div class="container" style="background-color:lightgray;">
+    <h3>Equipment</h3>
+    <div class="row">
+      <div class="col-md-4">
+         <p>&spades; ABS</p>
+         <p>&spades; Elektrycznie ustawiane lusterka</p>
+         <p>&spades; Poduszka powietrzna pasażera</p>
+         <p>&spades; Alufelgi</p>
+         <p>&spades; Klimatyzacja automatyczna</p>
+         <p>&spades; Kurtyny powietrzne</p>
+         <p>&spades; Przyciemniane szyby</p>
+         <p>&spades; Tapicerka welurowa</p>
+      </div>
+      <div class="col-md-4">
+         <p>&spades; Centralny zamek</p>
+         <p>&spades; Immobilizer</p>
+         <p>&spades; Radio fabryczne</p>
+         <p>&spades; Czujnik deszczu</p>
+         <p>&spades; Klimatyzacja dwustrefowa</p>
+         <p>&spades; Podgrzewane lusterka boczne</p>
+         <p>&spades; Relingi dachowe</p>
+         <p>&spades; Tempomat</p>
+      </div>
+      <div class="col-md-4">
+        <p>&spades; Elektryczne szyby przednie</p>
+        <p>&spades; Poduszka powietrzna kierowcy</p>
+        <p>&spades; Wspomaganie kierownicy</p>
+        <p>&spades; Elektryczne szyby tylne</p>
+        <p>&spades; Komputer pokładowy</p>
+        <p>&spades; Poduszki boczne przednie</p>
+        <p>&spades; Światła przeciwmgielne</p>
+      </div>
+    </div>
+  </div>
+<hr>
+
+<div class="container">
+  <h3>Description</h3>
+  <div class="row">
+    <div class="col-md-8">
+      {{SingleCar.description}}
+    </div>
+  </div>
+</div>
+
+<hr>
+
+

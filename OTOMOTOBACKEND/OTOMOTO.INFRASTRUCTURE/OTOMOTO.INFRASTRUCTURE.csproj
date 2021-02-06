@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20201231225616_First.cs" />
+    <Compile Remove="Data\Migrations\20201231225616_First.Designer.cs" />
+    <Compile Remove="Data\Migrations\20201231230146_InitialCreate.cs" />
+    <Compile Remove="Data\Migrations\20201231230146_InitialCreate.Designer.cs" />
+    <Compile Remove="Data\Migrations\20201231232348_InitialCreate.cs" />
+    <Compile Remove="Data\Migrations\20201231232348_InitialCreate.Designer.cs" />
+    <Compile Remove="Data\Migrations\20201231232445_InitialCreate.cs" />
+    <Compile Remove="Data\Migrations\20201231232445_InitialCreate.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OTOMOTO.CORE\OTOMOTO.CORE.csproj" />
+  </ItemGroup>
+
+</Project>

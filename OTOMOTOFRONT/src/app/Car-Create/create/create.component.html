@@ -1,0 +1,119 @@
+<div class="container" style="margin-top: 100px;">
+  <h6 style="background-color: red;">files will be saved in asset folder, so you have to change the path in car Controller</h6>
+  <form [formGroup]="CreateForm" (ngSubmit)="Create2()">
+
+    <div class="form-row">
+      <div class="form-group col-md-3">
+        <label for="inputEmail4">Brand</label>
+        <input type="text" class="form-control" formControlName="Brand">
+        <p class="alert alert-danger" *ngIf="Brand.touched && Brand.errors?.required">
+          this field is required
+        </p>
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="inputPassword4">Model</label>
+        <input type="text" class="form-control" formControlName="Model">
+        <p class="alert alert-danger" *ngIf="Model.touched && Model.errors?.required">
+          this field is required
+        </p>
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="inputPassword4">Year</label>
+        <input type="number" class="form-control" min="0" formControlName="Year">
+        <p class="alert alert-danger" *ngIf="Year.touched && Year.errors?.required">
+          this field is required
+        </p>
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="inputEmail4">MileAge</label>
+        <input type="number" min="0" class="form-control" formControlName="MileAge">
+        <p class="alert alert-danger" *ngIf="MileAge.touched && MileAge.errors?.required">
+          this field is required
+        </p>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-3">
+        <label for="inputPassword4">State</label>
+        <input type="text" class="form-control" formControlName="State">
+        <p class="alert alert-danger" *ngIf="State.touched && State.errors?.required">
+          this field is required
+        </p>
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="inputEmail4">Doors</label>
+        <input type="number" min="0" class="form-control" formControlName="Doors">
+        <p class="alert alert-danger" *ngIf="Doors.touched && Doors.errors?.required">
+          this field is required
+        </p>
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="inputPassword4">Price</label>
+        <input type="number" min="0" class="form-control" formControlName="Price">
+        <p class="alert alert-danger" *ngIf="Price.touched && Price.errors?.required">
+          this field is required
+        </p>
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="inputPassword4">Picture</label>
+        <input type="file" class="form-control"  (change)="onFileSelected($event)" >
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-3">
+        <label for="inputPassword4">Color</label>
+        <input type="text" class="form-control" formControlName="Color">
+        <p class="alert alert-danger" *ngIf="Color.touched && Color.errors?.required">
+          this field is required
+        </p>
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="inputPassword4">Choose 4 Pictures for this Product</label>
+        <input type="file" class="form-control"  (change)="onFilesSelected($event)" required multiple>
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="cars">choose a Logo:</label>
+        <select id="cars" formControlName="Logo" class="form-control">
+          <option value="BMW.png">BMW</option>
+          <option value="Audi.png">Audi</option>
+          <option value="Wolkswagen.png">Mercedes</option>
+          <option  value="Chevreli.png">Audi</option>
+          <option  value="Mercedes.png">Audi</option>
+        </select>
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="inputPassword4">GearBox</label>
+        <input type="text" class="form-control" formControlName="GearBox">
+        <p class="alert alert-danger" *ngIf="GearBox.touched && GearBox.errors?.required">
+          this field is required
+        </p>
+      </div>
+
+      </div>
+
+
+    <div class="form-row">
+      <div class="form-group col-md-8">
+        <label for="inputEmail4">Description</label>
+        <textarea formControlName="Description" cols="20" rows="4" class="form-control"></textarea>
+        <p class="alert alert-danger" *ngIf="Description.touched && Description.errors?.required">
+          this field is required
+        </p>
+      </div>
+
+    </div>
+    <button type="submit"  [disabled]="CreateForm.invalid"  class="btn btn-success" style="margin-bottom: 100px;">Create </button>
+
+  </form>
+</div>

@@ -1,0 +1,10 @@
+C:\Users\User\Documents\Projects\AutoMoto-Clone\OTOMOTOBAKCEND\OTOMOTOCLONE\OTOMOTO.CORE\bin\Debug\net5.0\OTOMOTO.CORE.deps.json
+C:\Users\User\Documents\Projects\AutoMoto-Clone\OTOMOTOBAKCEND\OTOMOTOCLONE\OTOMOTO.CORE\bin\Debug\net5.0\OTOMOTO.CORE.dll
+C:\Users\User\Documents\Projects\AutoMoto-Clone\OTOMOTOBAKCEND\OTOMOTOCLONE\OTOMOTO.CORE\bin\Debug\net5.0\OTOMOTO.CORE.pdb
+C:\Users\User\Documents\Projects\AutoMoto-Clone\OTOMOTOBAKCEND\OTOMOTOCLONE\OTOMOTO.CORE\obj\Debug\net5.0\OTOMOTO.CORE.csprojAssemblyReference.cache
+C:\Users\User\Documents\Projects\AutoMoto-Clone\OTOMOTOBAKCEND\OTOMOTOCLONE\OTOMOTO.CORE\obj\Debug\net5.0\OTOMOTO.CORE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\Projects\AutoMoto-Clone\OTOMOTOBAKCEND\OTOMOTOCLONE\OTOMOTO.CORE\obj\Debug\net5.0\OTOMOTO.CORE.AssemblyInfoInputs.cache
+C:\Users\User\Documents\Projects\AutoMoto-Clone\OTOMOTOBAKCEND\OTOMOTOCLONE\OTOMOTO.CORE\obj\Debug\net5.0\OTOMOTO.CORE.AssemblyInfo.cs
+C:\Users\User\Documents\Projects\AutoMoto-Clone\OTOMOTOBAKCEND\OTOMOTOCLONE\OTOMOTO.CORE\obj\Debug\net5.0\OTOMOTO.CORE.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Projects\AutoMoto-Clone\OTOMOTOBAKCEND\OTOMOTOCLONE\OTOMOTO.CORE\obj\Debug\net5.0\OTOMOTO.CORE.dll
+C:\Users\User\Documents\Projects\AutoMoto-Clone\OTOMOTOBAKCEND\OTOMOTOCLONE\OTOMOTO.CORE\obj\Debug\net5.0\OTOMOTO.CORE.pdb
