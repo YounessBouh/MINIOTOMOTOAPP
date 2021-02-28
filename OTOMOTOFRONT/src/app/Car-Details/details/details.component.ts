@@ -48,32 +48,14 @@ export class DetailsComponent implements OnInit {
         console.log(this.SingleCar);
         for(let x=0;x<this.SingleCar.pictures.length;x++)
         {
-          if(this.SingleCar.picURL.includes('https'))
-          {
-            this.galleryImages[x]={
-              small: this.SingleCar.pictures[x],
-              medium: this.SingleCar.pictures[x],
-              big: this.SingleCar.pictures[x]
-             }
-          }
-          else
-          {
-            this.galleryImages[x]={
-              small:this.path+ this.SingleCar.pictures[x],
-              medium: this.path+this.SingleCar.pictures[x],
-              big: this.path+this.SingleCar.pictures[x]
-             }
-          }
-
-
+          this.galleryImages[x]={
+            small:this.path+ this.SingleCar.pictures[x],
+            medium: this.path+this.SingleCar.pictures[x],
+            big: this.path+this.SingleCar.pictures[x]
+           }
         }
 
       }
     );
-
-
   }
-
-
-
 }
